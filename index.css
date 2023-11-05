@@ -162,11 +162,6 @@ header {
   font-size: 45px;
 }
 
-/* #book {
-  color: orange;
-  font-size: 40px;
-} */
-
 #price {
   color: green;
   font-size: 17px;
@@ -221,14 +216,6 @@ header {
   background-color: #0056b3;
 }
 
-/* #footer h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  padding: 2.6rem;
-  font-weight: 500;
-  color: #fff;
-  background: rgb(65, 65, 65);
-} */
 #foot {
   padding: 2.6rem;
 }
@@ -279,21 +266,6 @@ header {
   position: relative;
   text-align: center;
 }
-
-/* .centered-text {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  color: white;
-  font-size: large;
-  padding: 10px;
-  font-weight: 30px;
-  opacity: 0.85;
-
-} */
-/* .center img{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-} */
 
 .center::after {
   content: "";
@@ -349,10 +321,6 @@ header {
   top: 40%;
 }
 
-/* .centered-text a {
-  font-size: 1.2rem;
-} */
-
 .skill-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -379,11 +347,6 @@ html {
   margin-bottom: 1rem;
   position: relative;
 }
-
-/* .bar-container h3,span{
-  font-size: 1,2rem;
-  font-weight: 400;
-} */
 .base-bar {
   width: 500%;
   height: 0.5rem;
@@ -391,7 +354,6 @@ html {
   border-radius: 5rem;
   position: absolute;
   bottom: 0px;
-  /* left: 0px; */
 }
 
 .html-bar {
