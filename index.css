@@ -1,0 +1,449 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+
+  html,body{
+    overflow-x: hidden;
+  }
+#nav {
+  height: 60px;
+}
+
+.logo {
+  width: 95px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.listitem {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+
+}
+
+.rating i {
+  color: orange;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #FF42B3;
+}
+
+#title-h1 {
+  color: #fff;
+  font-size: 80px;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 1000;
+}
+
+#title-p {
+  color: #fff;
+  padding: 0 144px 0 0;
+  font-size: 17px;
+}
+.text-center{
+  font-weight: 600;
+}
+
+.download {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  fill: #131316;
+  color: #131316;
+  background-color: #fff;
+  border: solid;
+  border-radius: 15px;
+  border-color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.download:hover {
+  background-color: #FF42B3;
+
+}
+
+header {
+  background:
+    url(https://cdn.pixabay.com/photo/2017/12/16/22/22/bora-bora-3023437_1280.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  height: 550px;
+  /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
+}
+
+/* package card */
+
+#knowmore {
+  background-color: #FF42B3;
+  ;
+  border-style: solid;
+  border-color: #FF42B3;
+  ;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.india-booknow {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  fill: #131316;
+  color: #131316;
+  background-color: #FF42B3;
+  border-style: solid;
+  border-color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+
+}
+/* 
+.india-booknow:hover {
+  background-color: yellowgreen;
+} */
+
+.tour-card-text {
+  color: darkslateblue;
+  font-weight: 600;
+}
+
+.tour-card-title {
+  font-weight: 500;
+}
+
+.card h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 18px;
+  color: grey;
+}
+
+.card {
+  border: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover p,
+.card:hover h5{
+  color:rgb(126, 8, 8);
+}
+
+#place {
+  color: orange;
+  font-size: 45px;
+}
+
+/* #book {
+  color: orange;
+  font-size: 40px;
+} */
+
+#price {
+  color: green;
+  font-size: 17px;
+}
+
+.blog-img {
+  height: 500px;
+  width: 100%;
+}
+
+.blog-cont-img {
+  height: 200px;
+  width: 350px;
+}
+
+
+.contact-img {
+  width: 50%;
+}
+
+#contact {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container .btn-primary {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-container .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* #footer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(65, 65, 65);
+} */
+#foot {
+  padding: 2.6rem;
+}
+
+.icon-set {
+  margin-top: 3%;
+  /* horizontal align(in One Line) */
+  display: flex;
+  /* align them in horizontally center */
+  justify-content: center;
+  /* align items vertically center */
+  align-items: center;
+}
+
+.icon,
+.up-arrow {
+  /* to give space in between each icons */
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.icon i {
+  font-size: 30px;
+  color: white;
+}
+
+.icon:hover {
+  background-image: linear-gradient(to bottom left, rgb(37, 9, 88), rgb(244, 24, 108));
+}
+
+.icon:hover i {
+  color: white;
+  animation: shake 0.75s;
+  /* used for animation */
+}
+
+.blog-cont-img:hover {
+  animation: shake 17s;
+}
+
+.center {
+  position: relative;
+  text-align: center;
+}
+
+/* .centered-text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: white;
+  font-size: large;
+  padding: 10px;
+  font-weight: 30px;
+  opacity: 0.85;
+
+} */
+/* .center img{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+} */
+
+.center::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.871);
+  opacity: 0;
+  z-index: 1;
+
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.center:hover::after {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.center:hover .centered-text {
+  opacity: 1;
+  top: 40%;
+}
+
+.center {
+  margin: 0 1rem;
+  position: relative;
+}
+
+
+.centered-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.centered-text h4 {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.img-container:hover .centered-text {
+  opacity: 1;
+  top: 40%;
+}
+
+/* .centered-text a {
+  font-size: 1.2rem;
+} */
+
+.skill-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 1%;
+  margin-left: 10rem;
+}
+
+.skill-img img {
+  width: 90%;
+  padding-left: 4rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* for the smooth scrolling */
+}
+
+.bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+/* .bar-container h3,span{
+  font-size: 1,2rem;
+  font-weight: 400;
+} */
+.base-bar {
+  width: 500%;
+  height: 0.5rem;
+  background-color: black;
+  border-radius: 5rem;
+  position: absolute;
+  bottom: 0px;
+  /* left: 0px; */
+}
+
+.html-bar {
+  background-color: white;
+  width: 30%;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+/* keyframes are used for create animations */
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+
+/* up arrow */
+.up-arrow{
+  float: right;
+  margin: 0px 10px 50px 0px ;
+ 
+}
+.up-arrow {
+ 
+  background-image: linear-gradient(to bottom left, yellow,orangered);
+
+}
+.up-arrow:hover{
+  background-image: linear-gradient(to bottom left, yellow,orangered);
+}
+.up-arrow:hover i{
+  color: white;
+  animation: shake 0.75s; /* used for animation */
+}

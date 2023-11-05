@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRAVEL WEBSITE</title>
+
+  <link rel="icon" type="image/x-icon"
+    href="https://tse1.mm.bing.net/th?id=OIP.4ssnvdCzRgJ3gowaZRJNLwHaFC&pid=Api&P=0&h=180">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Oswald&family=Roboto+Slab&family=Roboto:ital@0;1&display=swap"
+    rel="stylesheet">
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./index.css">
+  <!--  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Latest compiled and minified CSS
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+
+
+</head>
+
+<body>
+  <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
+    <img class="logo"
+      src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148612781.jpg?w=740&t=st=1697458898~exp=1697459498~hmac=e6250d2ce944b53150295837e3deb7b1b0de4222a974034668e26d3fec8a544a"
+      alt="image">
+    <div class="container">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="listitem">
+            <a class="link" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="listitem">
+            <a class="link" aria-current="page" href="#book">Bookings</a>
+          </li>
+          <li class="listitem">
+            <a class="link" aria-current="page" href="#india">India Packages</a>
+          </li>
+          <li class="listitem">
+            <a class="link" aria-current="page" href="#honeymoon">Honeymoon Specials</a>
+          </li>
+          <li class="listitem">
+            <a class="link" aria-current="page" href="#international">World Packages</a>
+          </li>
+          <li class="listitem">
+            <a class="link" aria-current="page" href="#blog">Blog</a>
+          </li>
+          <li class="listitem">
+            <a class="link" aria-current="page" href="#amenties">Amenties</a>
+          </li>
+          <li class="listitem">
+            <a class="link" aria-current="page" href="#contact">Contact</a>
+          </li>
+
+          <li class="listitem">
+            <a href="#"> <i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <header id="header" class="bg-dark p-5"> <!--to navigate to the particular heading cintent-->
+    <div class="container mt-3">
+      <br><br><br><br>
+      <h1 class="text text-center text-white" style="
+      font-size: 80px;
+      font-family: 'DM Serif Display', serif;
+      font-weight: 900;">
+        The Perfect Travel Guide</h1>
+
+      <!-- <a class="download" href="#book" target="blank" download>BOOK YOUR SLOT NOW</a> -->
+    </div>
+  </header>
+
+  <section id="book">
+    <div class="container mt-3">
+      <h2 class="text-center"><span id="place">Book</span> Your Slot</h2>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+          <div class="card">
+            
+            <div class="card-body">
+              <form class="row">
+                <div class="col-md-3  ">
+                  <label for="country" class="sr-only">Country</label>
+                  <select class="form-select" id="country">
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="India">India</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Canada">Canada</option>
+                    <option value="China">China</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="destination" class="sr-only">Destination</label>
+                  <select class="form-select" id="destination">
+                    <option value="" disabled selected>Select Destination</option>
+                    <option value="beach">Beach</option>
+                    <option value="mountain">Mountain</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="budget" class="sr-only">Budget Range</label>
+                  <select class="form-select" id="budget">
+                    <option value="" disabled selected>Select Budget Range</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="duration" class="sr-only">Duration</label>
+                  <select class="form-select" id="duration">
+                    <option value="" disabled selected>Select Duration</option>
+                    <option value="1week">1 Week</option>
+                    <option value="2weeks">2 Weeks</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary w-100 mt-3" >BOOK NOW</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="home "> <!--to navigate to the particular heading cintent-->
+    <div class="container mt-5" style="margin-top: -6%;">
+      <div class="row mt-5">
+        <div class="col-md-6 mt-2">
+          <img src="https://images.pexels.com/photos/1430673/pexels-photo-1430673.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="" width="100%">
+          <br> <br>
+          <p class="text-justify">
+            Surrounded by scenic beauty and attractive tourist attractions we make
+            it convenient for you to visit all the beautiful places with our inhouse guide.
+            We can also help you arrange transport facilities for an easier commute to nearby places.
+          </p>
+          <div class="text-center text-white-100">
+            <a class="india-booknow" href="#" target="blank" download>KNOW MORE</a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-0">
+          <h1>Experience the Life of <br>
+            <span>Mkonos City</span>
+          </h1>
+          <p class="text-justify">
+            We will help you experience Mykonos life in its true sense. From living among the residents
+            to eating authentic delicacies you are sure to walk home with memories and wonderful
+            moments.</p><br>
+          <img src="https://images.pexels.com/photos/1656687/pexels-photo-1656687.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="" width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="india">
+    <div class="container mt-5">
+      <div class="row">
+        <h1 class="text-center"><span id="place">India</span> Tour Packages</h1>
+        <p class="text-center">India, a land of glorious past and an extraordinary future. The air of India will swing
+          you in each way and make you a part of its soil, in some way or the other. India Tourism holds an odyssey
+          of diverse terrain that starts with snow-covered elevations to tropical delights, satisfies your soul with
+          all the twist, turns and swirls. We’re here to help you sort the best India tourist destinations. </p>
+        <!-- <a class="amenties_knowmore" href="#" target="blank" download>KNOW MORE</a> -->
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <div class="card h-10">
+            <img src="./images/rajasthan.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="tour-card-title text-center">Rajasthan Tour Packages</h5>
+              <p class="tour-card-text text-center">Price Start From: <span id="price">₹30000</span></p>
+              <p class="rating text-center">Rating:
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </p>
+              <div class="text-center">
+                <a class="india-booknow" href="#">BOOK NOW</a>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-10">
+            <img src="./images/himachal.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="tour-card-title text-center">Himachal Tour Packages</h5>
+              <p class="tour-card-text text-center">Price Start From: <span id="price">₹45000</span></p>
+              <p class="rating text-center">Rating:
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </p>
+              <div class="text-center">
+                <a class="india-booknow" href="#">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-10">
+            <img src="./images/Goa.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="tour-card-title text-center">Goa Tour Packages</h5>
+              <p class="tour-card-text text-center">Price Start From: <span id="price">₹55000</span></p>
+              <p class="rating text-center">Rating:
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </p>
+              <div class="text-center">
+                <a class="india-booknow" href="#">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div class="col">
+          <div class="card h-10">
+            <img src="./images/uttarakhand.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="tour-card-title text-center">Punjab Tour Packages</h5>
+              <p class="tour-card-text text-center">Price Start From: <span id="price">₹45000</span></p>
+              <p class="rating text-center">Rating:
+                <i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i>
+              </p>
+              <div class="text-center">
+                <a class="india-booknow" href="#">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <section id="honeymoon">
+    <div class="container mt-5">
+      <div class="row">
+        <h1 class="text-center">Romantic Packages For <span id="place">Honeymoon</span></h1>
+        <p class="text-center">Plan a memorable honeymoon, choose exciting destination matching your dreamy
+          expectations!</p>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <div class="card h-10">
+            <img src="./images/thailand.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="tour-card-title text-center">Thailand Tour Packages</h5>
+              <p class="tour-card-text text-center">Price Start From: <span id="price">₹30000</span></p>
+              <p class="rating text-center">Rating:
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </p>
+              <div class="text-center">
+                <a class="india-booknow" href="#">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-10">
+            <img src="./images/maldives.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="tour-card-title text-center">Maldives Tour Packages</h5>
+              <p class="tour-card-text text-center">Price Start From: <span id="price">₹45000</span></p>
+              <p class="rating text-center">Rating:
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </p>
+              <div class="text-center">
+                <a class="india-booknow" href="#">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-10">
+            <img src="./images/italy.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="tour-card-title text-center">Italy Tour Packages</h5>
+              <p class="tour-card-text text-center">Price Start From: <span id="price">₹55000</span></p>
+              <p class="rating text-center">Rating:
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </p>
+              <div class="text-center">
+                <a class="india-booknow" href="#">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="card h-10">
+            <img src="./images/baali.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="tour-card-title text-center">Bali Tour Packages</h5>
+              <p class="tour-card-text text-center">Price Start From: <span id="price">₹45000</span></p>
+              <p class="rating text-center">Rating:
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </p>
+              <div class="text-center">
+                <a class="india-booknow" href="#">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <iframe width="347" height="318" src="https://www.youtube.com/embed/3UpP2a2KMVI" title="Creative Photography Tips and Trick with Phone using pro Mode  | Mobile Photography Hacks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+
+    </div>
+  </section>
+
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+          <div class="col">
+              <div class="position-relative">
+                  <img src="https://lonelyplanetstatic.imgix.net/marketing/2022/BIT/bit-guidebook-bg-desk.jpeg?auto=format&q=75&w=1920" alt="Our Guidebooks & Travel Books">
+                  <div class="image-overlay">
+                      <h2>Our Guidebooks & Travel Books</h2>
+                      <p>Whether you’re interested in traveling to a new city, going on a cruise, or cooking a new dish — we’re committed to inspiring you to experience travel in a whole new way. Lonely Planet’s collection of 825+ travel and guidebooks is sure to inspire the traveler within.</p>
+                      <a href="#" class="btn btn-primary">View All Books</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section> -->
+
+
+  <section id="international">
+    <div class="container">
+      <div class="row mt-5">
+        <h1 class="text-center ">Packages Around the <span id="place">World</span></h1>
+        <p class="text-center">Let's Explore The World Together! Find awesome tour, flights and activities in World.!
+        </p>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <div class="card h-10 package-card">
+            <img src="./images/dubai.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="tour-card-title text-center">Dubai Tour Packages</h5>
+              <p class="tour-card-text text-center">Price Start From: <span id="price">₹55000</span></p>
+              <p class="rating text-center">Rating:
+                <i class="fas fa-star"></i></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i>
+              </p>
+              <div class="text-center">
+                <a class="india-booknow" href="#">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-10 package-card">
+            <img src="./images/singapore.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="tour-card-title text-center">Singapore Tour Packages</h5>
+              <p class="tour-card-text text-center">Price Start From: <span id="price">₹87000</span></p>
+              <p class="rating text-center">Rating:
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </p>
+              <div class="text-center">
+                <a class="india-booknow" href="#">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-10 package-card">
+            <img src="./images/malasia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="tour-card-title text-center">Malasia Tour Packages</h5>
+              <p class="tour-card-text text-center">Price Start From: <span id="price">₹88000</span></p>
+              <p class="rating text-center">Rating:
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </p>
+              <div class="text-center">
+                <a class="india-booknow" href="#">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-10 package-card ">
+            <img src="./images/france.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="tour-card-title text-center">France Tour Packages</h5>
+              <p class="tour-card-text text-center">Price Start From: <span id="price">₹89000</span></p>
+              <p class="rating text-center">Rating:
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i
+                  class="fas fa-star"></i>
+              </p>
+              <div class="text-center">
+                <a class="india-booknow" href="#">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="container mt-5">
+      <h1 class="text text-center">Our <span id="place">Blog</span></h1>
+
+
+      <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/solo1.jpg" class="blog-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Explore The World with us</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum quisquam ullam blanditiis, enim
+                tempore accusantium ipsa ipsam dolore perferendis delectus facere tenetur rerum iure ipsum deleniti
+                nostrum voluptatum asperiores itaque.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/dubai.webp" class="blog-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Make memories with us</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nisi quae quaerat laborum nostrum quo
+                enim perferendis excepturi, nulla totam inventore accusantium possimus quibusdam velit commodi nihil
+                eius sunt provident!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/france.webp" class="blog-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Make happiness with us</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque provident libero beatae eius deleniti,
+                corporis eveniet ab odio obcaecati voluptas, quisquam, velit culpa sed aliquid repellat. Officia iste
+                sapiente voluptas!</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="text mt-5 ">Latest Blog Posts</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="blog-cont-img" src="./images/blog1.png" alt="...">
+        </div>
+        <div class="col-lg-8">
+          <h3>Travel with Ease: Discover the Benefits of Reliefband</h3>
+          <p> Traveling can be a rewarding experience, but it often comes with its fair share of challenges. Rarely is
+            travel one extended period of purely stress-free moments. That would be ideal, but it's not reality and I
+            can say this after having [...]
+            By Derek|May 23rd, 2023|Categories: Travel Gear|0 Comments</p>
+        </div>
+
+      </div>
+      <hr>
+      <p>By Derek|May 23rd, 2023|Categories: Travel Gear|0 Comments</p>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="blog-cont-img" src="./images/blog2.jpg" alt="...">
+        </div>
+        <div class="col-lg-8">
+          <h3>Experiencing the Best of Paris: A Traveler’s Guide</h3>
+          <p> Paris is one of the world's most popular travel destinations, attracting millions of visitors each year.
+            Located in the heart of France, the city is known for its stunning architecture, rich history, world-class
+            museums, and unparalleled cuisine. Whether you're interested [...]</p>
+        </div>
+      </div>
+      <hr>
+      <p>By team@wanderingearl.com|March 10th, 2023|Categories: France|0 Comments</p>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="blog-cont-img" src="./images/blog3.jpg" alt="...">
+        </div>
+        <div class="col-lg-8">
+          <h3>How to Enjoy a Rewarding Vacation to Orlando, Florida</h3>
+          <p> Orlando, Florida is a great vacation destination for couples, families and more that want to enjoy theme
+            parks, beaches, nature and a wide variety of entertainment. Located in the heart of Florida, Orlando is
+            actually home to more than 50 theme parks [...]</p>
+        </div>
+
+      </div>
+      <hr>
+      <p>By Derek|January 27th, 2023|Categories: USA|0 Comments</p>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="blog-cont-img" src="./images/blog4.jpg" alt="...">
+        </div>
+        <div class="col-lg-8">
+          <h3>Active Holiday Ideas in the French Alps for Solo Travelers </h3>
+          <p> Traveling alone is no longer terribly daunting. In fact, it is now seen as a common and wonderful way for
+            people to avoid travel regret. Why not head out on your own? There's no reason to wait when the world
+            provides so [...]</p>
+        </div>
+
+      </div>
+      <hr>
+      <p>By Derek|January 18th, 2023|Categories: France|0 Comments</p>
+      <hr>
+
+    </div>
+    </div>
+  </section>
+
+
+  <section id="amenties">
+    <div class="container">
+      <h1 class="text text-center">Our <span id="place">Amenties</span></h1>
+      <div class="row mt-5">
+        <div class="col-md-3">
+          <div class="center">
+            <img
+              src="https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              style="height: 220px; width:250px" class="img-fluid">
+            <div class="centered-text">
+              <h4>ISLAND & BEACHES</h4>
+              <a href="https://www.pexels.com/search/island%20and%20beaches/" class="btn btn-primary"
+                target="blank">learn
+                more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="center">
+            <img src="https://images.pexels.com/photos/6438684/pexels-photo-6438684.jpeg"
+              style="height: 220px; width:250px" class="img-fluid">
+            <div class="centered-text">
+              <h4>CULTURE & HERITAGE</h4>
+              <a href="https://kerala.me/culture" class="btn btn-primary" target="blank">learn
+                more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="center">
+            <img
+              src="https://images.pexels.com/photos/5638639/pexels-photo-5638639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              style="height: 220px; width:250px" class="img-fluid">
+            <div class="centered-text">
+              <h4>FOOD & DRINKS</h4>
+              <a href="https://www.pexels.com/photo/cooked-foods-750073/" class="btn btn-primary" target="blank">learn
+                more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="center">
+            <img
+              src="https://images.pexels.com/photos/4833957/pexels-photo-4833957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              style="height: 220px; width:250px" class="img-fluid">
+            <div class="centered-text">
+              <h4>FAMILY FUN</h4>
+              <a href="https://www.pexels.com/photo/women-hugging-and-smiling-4834142/" class="btn btn-primary"
+                target="blank">learn
+                more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-3">
+          <div class="center">
+            <img
+              src="https://images.pexels.com/photos/4516719/pexels-photo-4516719.jpeg?auto=compress&cs=tinysrgb&w=600"
+              style="height: 220px; width:250px" class="img-fluid">
+            <div class="centered-text">
+              <h4>CITY EXCITEMENT</h4>
+              <a href="https://traveltriangle.com/blog/things-to-do-on-kerala-trip/" class="btn btn-primary"
+                target="blank">learn
+                more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="center">
+            <img
+              src="https://images.pexels.com/photos/11897866/pexels-photo-11897866.jpeg?auto=compress&cs=tinysrgb&w=600"
+              style="height: 220px; width:550px" class="img-fluid">
+            <div class="centered-text">
+              <h4>NATURE AND ADVENTURE</h4>
+              <a href="https://www.pexels.com/search/nature%20and%20architecture/" class="btn btn-primary"
+                target="blank">learn
+                more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="center">
+            <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=600"
+              style="height: 220px; width:250px" class="img-fluid">
+            <div class="centered-text ">
+              <h4>HOTEL & STAY</h4>
+              <a href="https://www.agoda.com/city/kochi-in.html?cid=1844104" class="btn btn-primary"
+                target="blank">learn
+                more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="contact">
+    <div class="container">
+      <h1 class="text-center">Contact <span id="place">Us</span></h1>
+      <div class="row mt-5">
+        <div class="col-lg-6">
+          <img
+            src="https://media.istockphoto.com/id/1440399157/photo/international-airport-terminal-asian-beautiful-woman-with-luggage-and-walking-in-airport.webp?b=1&s=612x612&w=0&k=20&c=BYybcoBSBFBMq3JgtR54mDfSlHXXsyP2iG2mkCtYaWs="
+            alt="Airport Image" class="img-fluid" />
+        </div>
+        <div class="col-lg-6">
+          <div class="form-container border">
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="E-Mail" />
+            <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea>
+            <div class="text-center mt-2">
+              <a href="#m," class="btn btn-primary">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" style="background-color: black;">
+    <div class="container col-11">
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h5 class="text text-center text-white mt-4" style="font-weight: 700; font-size:22px">Follow us</h5>
+          <div class="icon-set">
+            <div class="icon">
+              <a href="https://www.linkedin.com/in/rittymariya-k-r-37698823b/" target="blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+            <div class="icon">
+              <a href="https://www.linkedin.com/in/rittymariya-k-r-37698823b/" target="blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="icon">
+              <a href="https://www.linkedin.com/in/rittymariya-k-r-37698823b/" target="blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+            <div class="icon">
+              <a href="https://www.linkedin.com/in/rittymariya-k-r-37698823b/" target="blank">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+            <div class="icon">
+              <a href="https://www.linkedin.com/in/rittymariya-k-r-37698823b/" target="blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+            <div class="icon">
+              <a href="https://www.linkedin.com/in/rittymariya-k-r-37698823b/" target="blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+            
+          </div>
+          
+          
+          <div class="skill-content">
+            
+            <div class="progress-bar">
+              <div class="bar-container">
+                
+                <div class="base-bar"></div>
+                <div class="base-bar html-bar"></div>
+              </div>
+            </div>
+          </div>
+          
+
+          <p class="text-white text-justify mt-2" style="font-size: small;">Travel does not provide medical advice, diagnosis, or treatment. Any
+            information published by
+            Travel is not intended as a substitute for medical advice, and you should not take any action
+            before consulting with a healthcare professional.</p>
+        </div>
+        <div class="col-md-3 mt-3 text-white">
+          <h5 class="text text-white mt-3" style="font-weight: 700;">MORE FROM TRAVEL</h5>
+          <div class="mt-3">
+          <p>ABOUT TRAVEL</p>
+          <p>SUBSCRIBE</p>
+          <p>NEWSLETTER SIGN UP</p>
+          <p>GIFT GUIDES</p>
+</div>
+        </div>
+        <div class="col-md-3 mt-3 text-white">
+          <h5 class="text text-white mt-3" style="font-weight: 700;">CONTACT</h5>
+          <div class="mt-3">
+          <p>CONTACT THE EDITORS</p>
+          <p>CARREERS</p>
+          </div>
+        </div>
+      </div>
+      <hr class="text-white">
+      <div class="row">
+        <div class="col-md-8 text-white text-justify mb-4" style="font-size: small;" >
+          © 2023 Travel. All rights reserved. Use of this site constitutes acceptance of our User Agreement and
+          Privacy Policy and Cookie Statement and Your California Privacy Rights. Condé Nast Traveler may earn a portion
+          of sales from products that are purchased through our site as part of our Affiliate Partnerships with
+          retailers. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise
+          used, except with the prior written permission of Traveler. Ad Choices
+    </div>
+    <div class="col-md-4 text-white">
+     <div class="up-arrow">
+      <a href="#header" ><i class="fa-solid fa-arrow-up fa-2x"></i></a>
+     </div>
+    </div>
+    </div>
+  </footer>
+
+ 
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+
+
+</html>
